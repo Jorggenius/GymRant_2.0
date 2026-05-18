@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymRat Admin - Ejercicios</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Administración de Ejercicios</h1>
+      <p>CRUD completo conectado al backend</p>
+    </div>
+
+    <div class="topbar-actions">
+      <a href="adminOneActivity.html" class="btn btn-secondary">Volver al panel</a>
+      <button class="btn btn-danger" data-logout>Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="panel">
+      <h2 id="formTitle">Crear ejercicio</h2>
+
+      <form id="exerciseForm" class="form-grid two-columns">
+        <input type="hidden" id="exerciseId" />
+
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required />
+        </div>
+
+        <div class="field">
+          <label for="categoria">Categoría</label>
+          <select id="categoria" required>
+            <option value="">Seleccione...</option>
+            <option value="pechoHiper">Pecho Hipertrofia</option>
+            <option value="pechoResis">Pecho Resistencia</option>
+            <option value="pechoFunci">Pecho Funcional</option>
+            <option value="espaldaHiper">Espalda Hipertrofia</option>
+            <option value="espaldaResis">Espalda Resistencia</option>
+            <option value="espaldaFunci">Espalda Funcional</option>
+            <option value="legsHiper">Pierna Hipertrofia</option>
+            <option value="legsResis">Pierna Resistencia</option>
+            <option value="legsFunci">Pierna Funcional</option>
+            <option value="cardioRunning">Cardio Running</option>
+            <option value="cardioBike">Cardio Bike</option>
+            <option value="cardioRope">Cardio Rope</option>
+          </select>
+        </div>
+
+        <div class="field full-width">
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" rows="4" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="musculoPrincipal">Músculo principal</label>
+          <input type="text" id="musculoPrincipal" required />
+        </div>
+
+        <div class="field">
+          <label for="nivel">Nivel</label>
+          <select id="nivel" required>
+            <option value="">Seleccione...</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="seriesRecomendadas">Series recomendadas</label>
+          <input type="number" id="seriesRecomendadas" min="1" required />
+        </div>
+
+        <div class="field">
+          <label for="repeticionesRecomendadas">Repeticiones recomendadas</label>
+          <input type="number" id="repeticionesRecomendadas" min="1" required />
+        </div>
+
+        <div class="form-actions full-width">
+          <button type="submit" class="btn btn-primary" id="saveBtn">Guardar ejercicio</button>
+          <button type="button" class="btn btn-secondary hidden" id="cancelEditBtn">Cancelar edición</button>
+        </div>
+      </form>
+
+      <div id="exerciseMessage" class="message hidden"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-header">
+        <h2>Lista de ejercicios</h2>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Buscar por nombre, categoría o nivel..."
+        />
+      </div>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Músculo</th>
+              <th>Series</th>
+              <th>Repeticiones</th>
+              <th>Nivel</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="exerciseTableBody">
+            <tr>
+              <td colspan="8" class="empty-state">Cargando ejercicios...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/adminExercises.js"></script>
+</body>
+</html>

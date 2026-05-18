@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymRat Admin - Usuarios</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Administración de Usuarios</h1>
+      <p>Sección visual de demostración</p>
+    </div>
+
+    <div class="topbar-actions">
+      <a href="adminOneActivity.html" class="btn btn-secondary">Volver al panel</a>
+      <button class="btn btn-danger" data-logout>Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="panel">
+      <div class="fake-banner">
+        <strong>Modo demo:</strong> este módulo es fake y no guarda cambios en la base de datos.
+      </div>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Rol</th>
+              <th>Estado</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody id="fakeUsersTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/adminUsers.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GymRat20"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.home.AdminUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.AdminExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.cardio.CardioRopeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.cardio.CardioBikeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.cardio.CardioRunningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.legs.LegsFunciActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.legs.LegsResisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.legs.LegsHiperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.back.BackFunciActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.back.BackResisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.back.BackHiperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.chest.ChestFunciActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.chest.ChestResisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercises.chest.ChestHiperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.detail.DetalleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.category.CardioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.category.LegsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.category.BackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.category.ChestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.AdminOneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GymRat20">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

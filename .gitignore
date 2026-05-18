@@ -1,0 +1,97 @@
+# =========================
+# VIDEOS / ARCHIVOS PESADOS
+# =========================
+
+/videos/
+**/videos/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# =========================
+# ANDROID STUDIO / GRADLE
+# =========================
+
+.gradle/
+**/.gradle/
+
+build/
+**/build/
+
+local.properties
+**/local.properties
+
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.aab
+
+# Archivos generados por Android Studio
+.idea/
+**/.idea/
+*.iml
+
+# Kotlin / KSP / Compose generados
+.kotlin/
+**/.kotlin/
+ksp/
+**/ksp/
+
+# =========================
+# SPRING BOOT / JAVA / MAVEN
+# =========================
+
+target/
+**/target/
+
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+**/logs/
+
+# Archivos temporales Java
+*.class
+
+# Configuraciones locales o sensibles
+.env
+*.env
+application-local.properties
+application-local.yml
+application-dev-local.properties
+application-dev-local.yml
+
+# =========================
+# WEB / FRONTEND
+# =========================
+
+node_modules/
+**/node_modules/
+
+dist/
+**/dist/
+
+.cache/
+**/.cache/
+
+# =========================
+# SISTEMA OPERATIVO
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# EDITORES
+# =========================
+
+.vscode/
+*.swp
+*.swo

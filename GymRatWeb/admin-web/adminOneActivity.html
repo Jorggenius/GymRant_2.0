@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymRat Admin - Panel</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Panel de Administrador</h1>
+      <p>Seleccione el módulo al que desea ingresar</p>
+    </div>
+    <button class="btn btn-danger" data-logout>Cerrar sesión</button>
+  </header>
+
+  <main class="main-content">
+    <section class="card-grid">
+      <article class="admin-card">
+        <h2>Administrar Ejercicios</h2>
+        <p>
+          Crear, editar, listar y eliminar ejercicios directamente en la base
+          de datos a través del backend.
+        </p>
+        <a href="adminExercisesActivity.html" class="btn btn-primary">Ir a Ejercicios</a>
+      </article>
+
+      <article class="admin-card">
+        <h2>Administrar Usuarios</h2>
+        <p>
+          Módulo visual de demostración. Esta sección es fake y no modifica la base de datos.
+        </p>
+        <a href="adminUserActivity.html" class="btn btn-secondary">Ir a Usuarios</a>
+      </article>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
